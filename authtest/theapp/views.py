@@ -14,9 +14,9 @@ def homepage(request):
         name=request.POST.get("name")
         phone=request.POST.get("phone")
         msg=client.messages.create(
-            body=f"hello {name} your outh is {otp}",
+            body=f" I.S.A.S: www.mbuguanganag.tech hello {name} your outh is {otp}",
             from_="+18596517429",
-            to="+254794432871"
+            to=phone
         )
         
         return redirect('auth')
