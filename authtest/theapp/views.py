@@ -3,7 +3,7 @@ import random
 from twilio.rest import Client
 
 otp=random.randint(1111,9999)
-auth_token="c49fb1f396e3a9fa7b7e644acd6b312f"
+auth_token="011628d35bb095419fc306592a5569c2"
 auth_id="AC9ae150dd36651e026e92d90da90a935f"
 
 client=Client(auth_id,auth_token)
@@ -24,7 +24,8 @@ def homepage(request):
 def authentic(request):
     if request.method=='POST':
         otpno=request.POST.get("otpno")
-        if otp!=otpno:
+        atb=int(otp) and int(otpno)
+        if atb==True:
              return redirect('login')
     return render(request,'theapp/authenti.html')
 def login(request):
