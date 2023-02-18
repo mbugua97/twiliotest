@@ -14,7 +14,7 @@ def homepage(request):
         name=request.POST.get("name")
         phone=request.POST.get("phone")
         msg=client.messages.create(
-            body=f" I.S.A.S:  www.mbuguanganag.tech hello {name} your outh is {otp}",
+            body=f"  I.S.A.S:               from  www.mbuguanganag.tech                        your  {name} your outh is {otp}",
             from_="+18596517429",
             to=phone
         )
