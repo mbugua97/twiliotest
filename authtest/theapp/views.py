@@ -16,7 +16,7 @@ def homepage(request):
         msg=client.messages.create(
             body=f"  I.S.A.S:               from  www.mbuguanganag.tech                        your  {name} your outh is {otp}",
             from_="+18596517429",
-            to=phone
+            to="+254794432871"
         )
         
         return redirect('auth')
