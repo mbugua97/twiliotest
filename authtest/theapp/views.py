@@ -24,7 +24,7 @@ def homepage(request):
 def authentic(request):
     if request.method=='POST':
         otpno=request.POST.get("otpno")
-        atb=int(otp) and int(otpno)
+        atb=int(otp) == int(otpno)
         if atb==True:
              return redirect('login')
     return render(request,'theapp/authenti.html')
