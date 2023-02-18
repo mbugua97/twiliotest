@@ -3,7 +3,7 @@ import random
 from twilio.rest import Client
 
 otp=random.randint(1111,9999)
-auth_token="011628d35bb095419fc306592a5569c2"
+auth_token="900062764324071aa543c688b0d2ea4c"
 auth_id="AC9ae150dd36651e026e92d90da90a935f"
 
 client=Client(auth_id,auth_token)
